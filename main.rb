@@ -1,17 +1,19 @@
-require_relative 'MegaGreeter'
+# frozen_string_literal: true
 
-if __FILE__ == $0
+require_relative 'mega_greeter'
+
+if $PROGRAM_NAME == __FILE__
   mg = MegaGreeter.new
   mg.say_hi
   mg.say_bye
 
   # Change name to be "Zeke"
-  mg.names = "Zeke"
+  mg.names = 'Zeke'
   mg.say_hi
   mg.say_bye
 
   # Change the name to an array of names
-  mg.names = %w(Albert Brenda Charles Dave Engelbert)
+  mg.names = %w[Albert Brenda Charles Dave Engelbert]
   mg.say_hi
   mg.say_bye
 
