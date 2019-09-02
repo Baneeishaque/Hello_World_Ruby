@@ -11,8 +11,7 @@ if __FILE__ == $0
   mg.say_bye
 
   # Change the name to an array of names
-  mg.names = ["Albert", "Brenda", "Charles",
-              "Dave", "Engelbert"]
+  mg.names = %w(Albert Brenda Charles Dave Engelbert)
   mg.say_hi
   mg.say_bye
 
